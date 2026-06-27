@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+    background: #f3f4f6;
+}
+
+.col-12 {
+    grid-column: span 12;
+    text-align: center;
+}
+
+.col-3 {
+    grid-column: span 3;
+}
+
+.col-4 {
+    grid-column: span 4;
+}
+
+.col-8 {
+    grid-column: span 8;
+}
+
+.head-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 5px;
+    padding: 10px;
+    color: #fff;
+}
+
+.head-container nav ul {
+    display: flex;
+    list-style: none;
+    margin: 10px;
+}
+
+.head-container nav ul li a {
+    text-decoration: none;
+    color: #f8f4e3;
+    padding: 20px;
+}
+
+.head-container nav ul li a:hover {
+    color: #d4a373;
+}
+
+header,
+.footer {
+    background: #374151;
+}
+
+.hero {
+    display: grid;
+    justify-items: center;
+    padding: 10px 10px;
+    text-align: center;
+    margin: 30px 5px;
+    background: white;
+    border-radius: 5px;
+
+}
+
+.hero h2,
+.hero p {
+    padding: 10px;
+}
+
+.hero button,
+.newsletter button {
+    padding: 10px;
+    border-radius: 5px;
+    background: #374151;
+    color: white;
+
+}
+
+.hero button:hover,
+.newsletter button:hover {
+    background-color: #4b5563;
+    cursor: pointer;
+}
+
+.featured-book,
+.book-categories,
+.special-offer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 30px 5px;
+    padding: 10px;
+}
+
+.card-featured {
+    margin: 10px 10px;
+    padding: 10px;
+    background: #dbeafe;
+    color: #1f2937;
+}
+
+.card-categories {
+    margin: 10px 10px;
+    padding: 10px;
+    background: #dcfce7;
+    color: #1f2937;
+}
+
+.offers {
+    margin: 10px 10px;
+    padding: 10px;
+    background: #fef3c7;
+    color: #78350f;
+}
+
+
+.card-featured:hover,
+.card-categories:hover {
+    transform: translateY(-5px);
+}
+
+.card-featured,
+.card-categories {
+    transition: 0.3s;
+}
+
+body {
+    color: #1f2937;
+}
+
+
+.special-offer {
+    background: #fef3c7;
+    border-radius: 5px;
+}
+
+.special-offer img {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 10px;
+}
+
+#offer {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+#offer h3 {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+#offer p {
+    font-size: medium;
+    color: #4b5563;
+    line-height: 1.5;
+}
+
+#offer button {
+    background: #374151;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#offer button:hover {
+    background: #4b5563;
+
+}
+
+#collection {
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.newsletter {
+    background: white;
+    margin: 30px 5px;
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+
+.newsletter p {
+    color: #6b7280;
+    padding: 20px;
+}
+
+.newsletter input {
+    width: 100%;
+    max-width: 400px;
+    height: 40px;
+    padding: 0 12px;
+    margin: 10px;
+    color: #374151;
+    font-size: 16px;
+    background: #fff;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+    outline: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+}
+
+.container h3 {
+    color: #fff;
+    padding: 5px;
+}
+
+.container p {
+    color: #d1d5db;
+    padding: 5px;
+}
+
+.copyright {
+    text-align: center;
+    margin: 20px;
+    padding-top: 20px;
+    color: #fff;
+}
+
+@media(max-width:768px) {
+    .row {
+        background: lightblue;
+    }
+
+    .head-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .head-container nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .head-container nav ul li {
+        padding: 10px;
+    }
+
+    .col-3 {
+        grid-column: span 12;
+        padding: 20px;
+    }
+
+    .col-4 {
+        grid-column: span 12;
+        padding: 20px;
+    }
+
+    .col-8 {
+        grid-column: span 12;
+    }
+
+    #offer {
+        align-items: center;
+        text-align: center;
+    }
+
+    .newsletter input {
+        margin: 20px 0px;
+    }
+
+    .newsletter p {
+        line-height: 30px;
+    }
+
+    p {
+        line-height: 30px;
+    }
+}
